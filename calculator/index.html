@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="history" readonly>
+            <input type="text" id="output" readonly>
+        </div>
+        <div class="buttons">
+            <button class="operator" id="clear">C</button>
+            <button class="operator" id="history-button">History</button>
+            <button class="number" id="btn-7">7</button>
+            <button class="number" id="btn-8">8</button>
+            <button class="number" id="btn-9">9</button>
+            <button class="operator" id="btn-plus">+</button>
+            <button class="number" id="btn-4">4</button>
+            <button class="number" id="btn-5">5</button>
+            <button class="number" id="btn-6">6</button>
+            <button class="operator" id="btn-minus">-</button>
+            <button class="number" id="btn-1">1</button>
+            <button class="number" id="btn-2">2</button>
+            <button class="number" id="btn-3">3</button>
+            <button class="operator" id="btn-multiply">*</button>
+            <button class="number" id="btn-0">0</button>
+            <button class="number" id="btn-decimal">.</button>
+            <button class="operator" id="btn-equals">=</button>
+            <button class="operator" id="btn-divide">/</button>
+        </div>
+    </div>
+    <div class="history-container">
+        <h2>Calculation History</h2>
+        <ul id="history-list">
+            <!-- History items will be displayed here -->
+        </ul>
+        <button class="operator" id="clear-history">Clear History</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

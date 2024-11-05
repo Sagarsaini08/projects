@@ -1,0 +1,127 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color for the entire page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Calculator container */
+.calculator {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Display area for input and output */
+.display input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+}
+
+/* Buttons container */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Common button styles */
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+/* Operator buttons */
+.operator {
+    background-color: #f0f0f0;
+}
+
+/* Numeric buttons */
+.number {
+    background-color: #e0e0e0;
+}
+
+/* Equals button */
+#btn-equals {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+/* Clear button */
+#clear {
+    background-color: #FF6347;
+    color: #fff;
+}
+
+/* History button */
+#history-button {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Clear history button */
+#clear-history {
+    background-color: #FF6347;
+    color: #fff;
+    margin: 10px auto;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #ddd;
+}
+
+/* History container styles */
+.history-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* History list styles */
+#history-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* History list items */
+#history-list li {
+    font-size: 16px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+/* Styling for decimal button */
+#btn-decimal {
+    background-color: #e0e0e0;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 768px) {
+    .calculator {
+        width: 80%;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
